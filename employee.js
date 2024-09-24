@@ -5,6 +5,10 @@ class Employee {
         this.title = title;
         this.manager = manager;
 
+        if (manager) {
+            manager.addEmployee(this)
+        }
+
     }
 }
 
